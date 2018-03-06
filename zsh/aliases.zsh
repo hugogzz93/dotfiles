@@ -69,10 +69,13 @@ alias ve='vim ~/.vimrc'
 alias ze='vim ~/.zshrc'
 
 # Git Aliases
+alias glopf="git log --pretty=format:'%Creset%C(yellow bold)%h %Creset%C(cyan bold)[%ar] %Creset%C(green bold)(%an) %Creset%C(magenta bold)%d %Creset%s' --all --abbrev-commit --graph --decorate --date=short"
+alias glf="git log --follow"
 alias gs='git status'
-alias gstsh='git stash'
-alias gst='git stash'
-alias gsp='git stash pop'
+alias gaa='git add .'
+alias gsta='git stash'
+alias gst='git status'
+alias gstap='git stash pop'
 alias gsa='git stash apply'
 alias gsh='git show'
 alias gshw='git show'
@@ -115,9 +118,11 @@ alias gpub='grb publish'
 alias gtr='grb track'
 alias gpl='git pull'
 alias gplr='git pull --rebase'
-alias gps='git push'
+alias gp='git push'
+alias gpo='git push origin'
 alias gpsh='git push -u origin `git rev-parse --abbrev-ref HEAD`'
 alias gnb='git nb' # new branch aka checkout -b
+alias gcob='git checkout -b' # new branch aka checkout -b
 alias grs='git reset'
 alias grsh='git reset --hard'
 alias gcln='git clean'
@@ -143,7 +148,11 @@ alias cl='clear'
 alias gz='tar -zcvf'
 
 # Ruby
+
+alias ru='bundle exec rackup'
+alias rc='rails c'
 alias c='rails c' # Rails 3
+alias rs='rails server' # Rails 3
 alias co='script/console' # Rails 2
 alias cod='script/console --debugger'
 
@@ -170,6 +179,10 @@ alias portforward='sudo ipfw add 1000 forward 127.0.0.1,3000 ip from any to any 
 
 alias rdm='rake db:migrate'
 alias rdmr='rake db:migrate:redo'
+alias rkdbm='rake db:migrate'
+alias rkdbs='rake db:migrate:status'
+alias rkdbr='rake db:rollback'
+alias rgm='rails g migration'
 
 # Zeus
 alias zs='zeus server'
@@ -182,13 +195,13 @@ alias zrdbtp='zeus rake db:test:prepare'
 alias zzz='rm .zeus.sock; pkill zeus; zeus start'
 
 # Rspec
-alias rs='rspec spec'
-alias sr='spring rspec'
-alias src='spring rails c'
-alias srgm='spring rails g migration'
-alias srdm='spring rake db:migrate'
-alias srdt='spring rake db:migrate'
-alias srdmt='spring rake db:migrate db:test:prepare'
+# alias rs='rspec spec'
+# alias sr='spring rspec'
+# alias src='spring rails c'
+# alias srgm='spring rails g migration'
+# alias srdm='spring rake db:migrate'
+# alias srdt='spring rake db:migrate'
+# alias srdmt='spring rake db:migrate db:test:prepare'
 
 
 # Sprintly - https://github.com/nextbigsoundinc/Sprintly-GitHub
@@ -211,3 +224,6 @@ alias dbmu='spring rake db:migrate:up'
 
 # Homebrew
 alias brewu='brew update  && brew upgrade && brew cleanup && brew prune && brew doctor'
+
+#custom
+alias j='z'
