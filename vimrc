@@ -66,6 +66,15 @@ set softtabstop=2
 set tabstop=2
 set expandtab
 
+" tabs
+nnoremap g <Nop>
+nnoremap go :tabnew<CR>
+nnoremap gn :tabnext<CR>
+nnoremap gp :tabprevious<CR>
+nmap <Left> :tabnext<CR>
+nmap <Right> :tabprevious<CR>
+
+
 " Auto indent pasted text
 nnoremap p p=`]<C-o>
 nnoremap P P=`]<C-o>
@@ -114,4 +123,6 @@ set ignorecase      " Ignore case when searching...
 set smartcase       " ...unless we type a capital
 
 " ================ Custom Settings ========================
+set encoding=utf-8
 so ~/.yadr/vim/settings.vim
+

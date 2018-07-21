@@ -135,6 +135,7 @@ alias gt='git t'
 alias gbg='git bisect good'
 alias gbb='git bisect bad'
 alias gdmb='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
+alias gbdm='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
 
 # Common shell functions
 alias less='less -r'
@@ -147,8 +148,17 @@ alias cl='clear'
 # Zippin
 alias gz='tar -zcvf'
 
-# Ruby
+#Docker
+alias dcup='docker-compose up'
+alias dcdown='docker-compose down'
+alias dcs='docker-compose start'
+alias dcb='docker-compose build'
+alias dcx='docker-compose exec'
+alias dcr='docker-compose run'
+alias dcre='docker-compose restart'
 
+# Ruby
+alias fs='foreman start -f Procfile.dev -p 3000'
 alias ru='bundle exec rackup'
 alias rc='rails c'
 alias c='rails c' # Rails 3
@@ -183,6 +193,7 @@ alias rkdbm='rake db:migrate'
 alias rkdbs='rake db:migrate:status'
 alias rkdbr='rake db:rollback'
 alias rgm='rails g migration'
+alias rkdbs='rake db:create && rake db:migrate'
 
 # Zeus
 alias zs='zeus server'
