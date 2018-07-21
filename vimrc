@@ -123,4 +123,6 @@ set ignorecase      " Ignore case when searching...
 set smartcase       " ...unless we type a capital
 
 " ================ Custom Settings ========================
+set encoding=utf-8
 so ~/.yadr/vim/settings.vim
+
