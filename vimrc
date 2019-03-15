@@ -126,3 +126,6 @@ set smartcase       " ...unless we type a capital
 set encoding=utf-8
 so ~/.yadr/vim/settings.vim
 
+let g:user_emmet_leader_key='<C-Z>'
+nmap <C-v> <"><+>p
+

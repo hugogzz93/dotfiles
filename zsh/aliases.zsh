@@ -165,6 +165,7 @@ alias c='rails c' # Rails 3
 alias rs='rails server' # Rails 3
 alias co='script/console' # Rails 2
 alias cod='script/console --debugger'
+alias bi='bundle install'
 
 #If you want your thin to listen on a port for local VM development
 #export VM_IP=10.0.0.1 <-- your vm ip
@@ -194,6 +195,9 @@ alias rkdbs='rake db:migrate:status'
 alias rkdbr='rake db:rollback'
 alias rgm='rails g migration'
 alias rkdbs='rake db:create && rake db:migrate'
+
+# Node
+alias npxs='npx sequelize'
 
 # Zeus
 alias zs='zeus server'
