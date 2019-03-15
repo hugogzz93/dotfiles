@@ -126,3 +126,6 @@ so ~/.yadr/vim/settings.vim
 set encoding=utf-8
 
 
+let g:user_emmet_leader_key='<C-Z>'
+nmap <C-v> <"><+>p
+

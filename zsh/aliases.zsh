@@ -168,6 +168,7 @@ alias fs='foreman start -f Procfile.dev -p 3000'
 alias ru='bundle exec rackup'
 alias rc='rails c'
 alias rs='rails server'
+alias bi='bundle install'
 
 #If you want your thin to listen on a port for local VM development
 #export VM_IP=10.0.0.1 <-- your vm ip
@@ -197,6 +198,9 @@ alias rkdbs='rake db:migrate:status'
 alias rkdbr='rake db:rollback'
 alias rgm='rails g migration'
 alias rkdbs='rake db:create && rake db:migrate'
+
+# Node
+alias npxs='npx sequelize'
 
 # Zeus
 alias zs='zeus server'
