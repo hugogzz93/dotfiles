@@ -70,7 +70,6 @@ alias ze='vim ~/.zshrc'
 
 # Git Aliases
 alias gs='git status'
-alias gstsh='git stash'
 alias gst='git stash'
 alias gsp='git stash pop'
 alias gsa='git stash apply'
@@ -115,7 +114,6 @@ alias gpub='grb publish'
 alias gtr='grb track'
 alias gpl='git pull'
 alias gplr='git pull --rebase'
-alias gps='git push'
 alias gpsh='git push -u origin `git rev-parse --abbrev-ref HEAD`'
 alias gnb='git nb' # new branch aka checkout -b
 alias grs='git reset'
@@ -130,6 +128,26 @@ alias gt='git t'
 alias gbg='git bisect good'
 alias gbb='git bisect bad'
 alias gdmb='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
+#Custom Git aliases
+alias glopf="git log --pretty=format:'%Creset%C(yellow bold)%h %Creset%C(cyan bold)[%ar] %Creset%C(green bold)(%an) %Creset%C(magenta bold)%d %Creset%s' --all --abbrev-commit --graph --decorate --date=short"
+alias glf="git log --follow"
+alias gaa='git add .'
+alias gsta='git stash'
+alias gst='git status'
+alias gstap='git stash pop'
+alias gp='git push'
+alias gpo='git push origin'
+alias gcob='git checkout -b' # new branch aka checkout -b
+
+#Docker
+alias dcup='docker-compose up'
+alias dcdown='docker-compose down'
+alias dcs='docker-compose start'
+alias dcb='docker-compose build'
+alias dcx='docker-compose exec'
+alias dcr='docker-compose run'
+alias dcre='docker-compose restart'
+
 
 # Common shell functions
 alias less='less -r'
@@ -146,6 +164,10 @@ alias gz='tar -zcvf'
 alias c='rails c' # Rails 3
 alias co='script/console' # Rails 2
 alias cod='script/console --debugger'
+alias fs='foreman start -f Procfile.dev -p 3000'
+alias ru='bundle exec rackup'
+alias rc='rails c'
+alias rs='rails server'
 
 #If you want your thin to listen on a port for local VM development
 #export VM_IP=10.0.0.1 <-- your vm ip
@@ -170,6 +192,11 @@ alias portforward='sudo ipfw add 1000 forward 127.0.0.1,3000 ip from any to any 
 
 alias rdm='rake db:migrate'
 alias rdmr='rake db:migrate:redo'
+alias rkdbm='rake db:migrate'
+alias rkdbs='rake db:migrate:status'
+alias rkdbr='rake db:rollback'
+alias rgm='rails g migration'
+alias rkdbs='rake db:create && rake db:migrate'
 
 # Zeus
 alias zs='zeus server'
@@ -182,13 +209,13 @@ alias zrdbtp='zeus rake db:test:prepare'
 alias zzz='rm .zeus.sock; pkill zeus; zeus start'
 
 # Rspec
-alias rs='rspec spec'
-alias sr='spring rspec'
-alias src='spring rails c'
-alias srgm='spring rails g migration'
-alias srdm='spring rake db:migrate'
-alias srdt='spring rake db:migrate'
-alias srdmt='spring rake db:migrate db:test:prepare'
+# alias rs='rspec spec'
+# alias sr='spring rspec'
+# alias src='spring rails c'
+# alias srgm='spring rails g migration'
+# alias srdm='spring rake db:migrate'
+# alias srdt='spring rake db:migrate'
+# alias srdmt='spring rake db:migrate db:test:prepare'
 
 
 # Sprintly - https://github.com/nextbigsoundinc/Sprintly-GitHub
